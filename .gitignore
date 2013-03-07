@@ -1,5 +1,3 @@
 _site/
 virtualenv/
-bundle/
-.bundle/
 .DS_Store
