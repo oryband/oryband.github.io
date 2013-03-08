@@ -1,5 +1,6 @@
 ruby "1.9.1"
 source "https://rubygems.org"
+gem "compass"
 # Default github settings.
 gem 'jekyll', '=0.12.0'
 gem 'liquid', '=2.4.1'

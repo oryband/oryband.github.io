@@ -1,9 +1,9 @@
-#markdown: rdiscount
+markdown: rdiscount
 pygments: true
 permalink: /posts/:title
 auto: true
-#rdiscount:
-  #extensions: [smart]
+rdiscount:
+  extensions: [smart]
 
 name: Ory Band
 url: http://OryBand.com
