@@ -1,1 +1,1 @@
-My personal website &amp; blog.
+My personal website and blog.
