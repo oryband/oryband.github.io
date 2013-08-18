@@ -1,1 +1,1 @@
-autocmd FileType html setlocal filetype=liquid
+" autocmd FileType html setlocal filetype=liquid
