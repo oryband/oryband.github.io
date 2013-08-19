@@ -1,27 +1,55 @@
+// Variables
+
+main_bg = #F9D6B0
+header_bg = #433062
+footer_bg = #1F034A
+
+main_text = #1F034A
+header_text = #F9B76D
+footer_text = #CCF2AB
+
+footer_border = #A8F26A
+
+selection_color = footer_border
+
+@font-face
+  font-family Merriweather
+  font-style normal
+  src url(http://fonts.googleapis.com/css?family=Merriweather)
+
+@font-face
+  font-family Lato
+  font-style normal
+  src url(http://fonts.googleapis.com/css?family=Lato)
+
+
+
+// Styling
+
 html,
 button,
 input,
 select,
 textarea
-  color: #222
+  color: main_text
 
 body
   font-size: 1em
   line-height: 1.4
 
 ::-moz-selection
-  background: #ffb0eb
+  background: selection_color
   text-shadow: none
 
 ::selection
-  background: #ffb0eb
+  background: selection_color
   text-shadow: none
 
 hr
   display: block
   height: 1px
   border: 0
-  border-top: 1px solid #468966
+  border-top: 1px solid selection_color
   margin: 1em 0
   padding: 0
 
@@ -43,31 +71,30 @@ textarea
   padding: 0.2em 0
 
 body
-  font: 16px/26px Helvetica, Helvetica Neue, Arial
+  font: 16px/26px Merriweather, serif
+  background: main_bg
 
 .wrapper
   width: 90%
   margin: 0 5%
 
 
-// ALL: Color
+// ALL: Colors
 
 .header-container
-  border-bottom: 20px solid #8e2800
+  font-family: Lato, sans-serif
+  background: header_bg
+
+// .main-container
 
 .footer-container,
 .main aside
-  border-top: 20px solid #8e2800
-
-.header-container
-  background: #b64926
-
-.footer-container,
-.main aside
-  background: #0fffff
+  font-family: Lato, sans-serif
+  background: footer_bg
+  border-top: 5px solid footer_border;
 
 .title
-  color: #fff0a5
+  color: header_text
 
 
 // MOBILE: Menu
@@ -90,7 +117,7 @@ nav a
   text-align: left
   text-decoration: none
   font-weight: bold
-  color: #fff0a5
+  color: header_text
   background: none
 
 nav a:hover,
@@ -110,11 +137,13 @@ nav a:hover
   font-size: 2em
 
 .main aside
-  color: white
+  color: header_text
   padding: 0px 5% 10px
 
+// MOBILE: Footer
+
 .footer-container footer
-  color: white
+  color: footer_text
   padding: 20px 0
 
 
@@ -155,6 +184,7 @@ nav ul li
   .header-container
     height: 100%
     width: 30%
+    padding: 30px 0;
     position: fixed
     top: 0
     right: 0
@@ -180,7 +210,7 @@ nav ul li
     text-align: left
     text-decoration: none
     font-weight: bold
-    color: #fff0a5
+    color: header_header
     background: none
 
   nav li:first-child a
@@ -193,11 +223,22 @@ nav ul li
 
   .main article
     float: left
-    width: 57%
+    width: 65%
 
   .main aside
     float: right
     width: 28%
+
+  // WIDE: Footer
+
+  .footer-container
+    float: left
+    padding-bottom: 20px
+
+  footer div
+    float: left
+    width: 67%
+
 
 @media only screen and (min-width: 1140px)
 
