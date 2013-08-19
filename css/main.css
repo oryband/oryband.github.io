@@ -16,12 +16,12 @@ body {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #ffb0eb;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #ffb0eb;
     text-shadow: none;
 }
 
@@ -29,7 +29,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #468966;
     margin: 1em 0;
     padding: 0;
 }
@@ -74,22 +74,25 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #8e2800;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #8e2800;
 }
 
-.header-container,
+.header-container {
+    background: #b64926;
+}
+
 .footer-container,
 .main aside {
-    background: #f16529;
+  background: #0fffff;
 }
 
 .title {
-    color: white;
+    color: #fff0a5;
 }
 
 /* ==============
@@ -101,26 +104,35 @@ nav ul {
     padding: 0;
 }
 
+nav li:first-child a {
+  margin-left: 0;
+}
+
+nav li:last-child a {
+  margin-right: 0;
+}
+
 nav a {
+    float: left;
     display: block;
-    margin-bottom: 10px;
+    margin: 0 1.7% 10px 1.7%;
     padding: 15px 0;
 
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+    color: #fff0a5;
+    background: none;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    /* color: white; */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* ==============
@@ -149,27 +161,17 @@ nav a:hover {
     ALL: IE Fixes
    =============== */
 
+nav ul li {
+    display: inline;
+}
+
+.oldie nav a {
+    margin: 0 0.7%;
+}
+
 .ie7 .title {
     padding-top: 20px;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
@@ -181,59 +183,74 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
     .title {
+        display: inline-block;
         float: left;
     }
 
     nav {
-        float: right;
-        width: 38%;
+        display: inline-block;
+        float: left;
+    }
+
+    nav ul li {
+      float: left;
+      margin: 1em 0 1em 2em;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/* ============
+    WIDE: Menu
+   ============ */
+    
+    .header-container {
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .title {
+        display: block;
+        float: none;
+    }
+
+    nav {
+        display: block;
+        float: none;
+    }
+
+    nav ul li {
+        display: list-item;
+        float: none;
+        margin: 0;
+        /* width: 100%; */
+    }
+
+    nav a {
+        float: none;
+        display: block;
+        margin: 0 1.7%;
+        padding: 15px 0;
+
+        text-align: left;
+        text-decoration: none;
+        font-weight: bold;
+
+        color: #fff0a5;
+        background: none;
+    }
+
+    nav li:first-child a {
+        margin: 0 1.7% 0 1.7%;
+    }
+
+    nav li:last-child a {
+        margin: 0 1.7% 0 1.7%;
     }
 
 /* ============
@@ -259,7 +276,7 @@ nav a:hover {
 
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
+        margin: 0 5%;
     }
 }
 
