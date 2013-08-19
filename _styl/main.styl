@@ -12,17 +12,6 @@ footer_border = #A8F26A
 
 selection_color = footer_border
 
-@font-face
-  font-family Merriweather
-  font-style normal
-  src url(http://fonts.googleapis.com/css?family=Merriweather)
-
-@font-face
-  font-family Lato
-  font-style normal
-  src url(http://fonts.googleapis.com/css?family=Lato)
-
-
 
 // Styling
 
@@ -71,7 +60,7 @@ textarea
   padding: 0.2em 0
 
 body
-  font: 16px/26px Merriweather, serif
+  font: 1.2em/1.95em Merriweather, serif
   background: main_bg
 
 .wrapper
@@ -79,17 +68,25 @@ body
   margin: 0 5%
 
 
-// ALL: Colors
+// ALL: Colors & Fonts
 
 .header-container
   font-family: Lato, sans-serif
   background: header_bg
 
-// .main-container
+.main-container
+  h1,h2,h3,h4,h5,h6
+    font-family: Lato, sans-serif
+
+.main-container h1
+    font-size: 2.2em
 
 .footer-container,
 .main aside
   font-family: Lato, sans-serif
+  font-weight: 300
+  font-size: 0.7em
+  line-height: 1.2em
   background: footer_bg
   border-top: 5px solid footer_border;
 
@@ -133,8 +130,8 @@ nav a:hover
 .main
   padding: 30px 0
 
-.main article h1
-  font-size: 2em
+// .main article h1
+//   font-size: 2em
 
 .main aside
   color: header_text
