@@ -1,12 +1,12 @@
-// Variables
+// Color variables
 
-main_bg = #F9D6B0
-header_bg = #433062
-footer_bg = #1F034A
+main_bg = white
+header_bg = main_bg
+footer_bg = #313133
 
-main_text = #1F034A
-header_text = #F9B76D
-footer_text = #CCF2AB
+main_text = #222
+header_text = main_text
+footer_text = #ccc
 
 footer_border = #A8F26A
 
@@ -68,15 +68,22 @@ body
   margin: 0 5%
 
 
-// ALL: Colors & Fonts
+// Colors & Fonts
 
 .header-container
-  font-family: Lato, sans-serif
+  font-family: Vollkorn, serif
   background: header_bg
 
+  h1
+    font-weight: normal
+
+  nav ul li a
+    font-weight: normal
+    padding: 12px 0
+
 .main-container
-  h1,h2,h3,h4,h5,h6
-    font-family: Lato, sans-serif
+  .wrapper
+    border-top: solid 1px #eee
 
 .main-container h1
     font-size: 2.2em
@@ -84,17 +91,19 @@ body
 .footer-container,
 .main aside
   font-family: Lato, sans-serif
-  font-weight: 300
+  font-weight: bold
   font-size: 0.7em
-  line-height: 1.2em
+  line-height: 2em
   background: footer_bg
   border-top: 5px solid footer_border;
 
 .title
   color: header_text
 
+// Menu
 
-// MOBILE: Menu
+.title
+  margin-bottom: 0
 
 nav ul
   margin: 0
@@ -109,7 +118,7 @@ nav li:last-child a
 nav a
   float: left
   display: block
-  margin: 0 1.7% 10px 1.7%
+  margin: 0 1.7%
   padding: 15px 0
   text-align: left
   text-decoration: none
@@ -124,8 +133,7 @@ nav a:visited
 nav a:hover
   text-decoration: none
 
-
-// MOBILE: Main
+// Main
 
 .main
   padding: 30px 0
@@ -137,14 +145,13 @@ nav a:hover
   color: header_text
   padding: 0px 5% 10px
 
-// MOBILE: Footer
+// Footer
 
 .footer-container footer
   color: footer_text
   padding: 20px 0
 
-
-// ALL: IE Fixes
+// IE Fixes
 
 nav ul li
   display: inline
@@ -155,95 +162,27 @@ nav ul li
 .ie7 .title
   padding-top: 20px
 
-@media only screen and (min-width: 480px)
 
-  // INTERMEDIATE: Menu
+@media only screen and (min-width: 500px)
 
-  .title
-    display: inline-block
+  // Menu
+
+  .title, nav ul li
     float: left
 
   nav
-    display: inline-block
-    float: left
-
-  nav ul li
-    float: left
-    margin: 1em 0 1em 2em
-
-
-// Media Queries
-
-@media only screen and (min-width: 768px)
-
-  // WIDE: Menu
-
-  .header-container
-    height: 100%
-    width: 30%
-    padding: 30px 0;
-    position: fixed
-    top: 0
-    right: 0
-
-  .title
-    display: block
-    float: none
-
-  nav
-    display: block
-    float: none
-
-  nav ul li
-    display: list-item
-    float: none
-    margin: 0
-
-  nav a
-    float: none
-    display: block
-    margin: 0 1.7%
-    padding: 15px 0
-    text-align: left
-    text-decoration: none
-    font-weight: bold
-    color: header_header
-    background: none
-
-  nav li:first-child a
-    margin: 0 1.7% 0 1.7%
-
-  nav li:last-child a
-    margin: 0 1.7% 0 1.7%
-
-  // WIDE: Main
-
-  .main article
-    float: left
-    width: 65%
-
-  .main aside
     float: right
-    width: 28%
 
-  // WIDE: Footer
+  nav ul li
+    margin: 1em 0 0 2em
 
-  .footer-container
-    float: left
-    padding-bottom: 20px
+@media only screen and (min-width: 750px)
 
-  footer div
-    float: left
-    width: 67%
-
-
-@media only screen and (min-width: 1140px)
-
-  // Maximal Width
+  // Main
 
   .wrapper
-    width: 1026px  // 1140px - 10% for margins
-    margin: 0 5%
+    width: 700px
+    margin: 0 auto
 
 
 // Helper classes
