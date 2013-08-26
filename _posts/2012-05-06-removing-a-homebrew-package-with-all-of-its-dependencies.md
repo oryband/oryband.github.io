@@ -3,13 +3,14 @@ layout: post
 title: Removing a Homebrew package with all of its dependencies
 ---
 
-## EDIT: ##
+Most packages have other packages they depend upon to work properly. However, uninstalling a package doesn't remove it's dependent packages. Overtime this creates a junkload of packages which I don't like much.
 
-It looks like [the issue is now solved using an external command called `brew rmdeps` or `brew rmtree`][1].
+I was looking for an easy way to remove packages which don't have any other packages depending on them.
 
-----------
+For example, the `python` package depends upon the `readline` package. Let's say there's no other installed package on my machine which depends upon `readline`. I want `brew rm python` to remove `readline` as well.
 
-## Original answer: ##
+Unfortunately, there isn't a no-dirty-hands way of doing this:
+
 
 It appears that currently, there's no easy way to accomplish this.
 
@@ -19,14 +20,19 @@ There's an [external command][3] called `brew leaves` which prints all packages 
 
 If you do a logical ***and*** on the output of `brew leaves` and `brew deps <package>`, you might just get a list of the orphaned dependency packages, which you can uninstall manually afterwards. Combine this with `xargs` and you'll get what you need, I guess (untested, don't count on this).
 
+## Edit 
+
+It looks like [the issue is now solved using an external command called `brew rmdeps` or `brew rmtree`][1].
 
 ----------
 
 
 **EDIT:** Somebody just suggested a very similar solution, using `join` instead of `xargs`:
 
-    brew rm FORMULA
-    brew rm $(join <(brew leaves) <(brew deps FORMULA))
+{% highlight bash %}
+brew rm FORMULA
+brew rm $(join <(brew leaves) <(brew deps FORMULA))
+{% endhighlight %}
 
 
 ----------
