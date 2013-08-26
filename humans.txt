@@ -12,6 +12,9 @@
 
     Mozilla Developer Network for their awesome knowledgebase.
     GitHub for their generous free hosting.
+    github.com/uraimo/pygments-vimstyles for generating the Wombat syntax colors from Vim.
+    github.com/snaptortoise/jekyll-rss-feeds for his tutorial and RSS feed template.
+    github.com/idan/idan.github.com for his static site code, and design inspiration.
 
 # TECHNOLOGY COLOPHON
 
