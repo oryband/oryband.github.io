@@ -23,7 +23,9 @@ textarea
   color: main_text
 
 body
-  font-size: 1em
+  background: main_bg
+  font-family: Merriweather, serif
+  font-size: 1.2em
   line-height: 1.4
 
 ::-moz-selection
@@ -35,10 +37,10 @@ body
   text-shadow: none
 
 hr
-  display: block
-  height: 1px
   border: 0
   border-top: 1px solid selection_color
+  display: block
+  height: 1px
   margin: 1em 0
   padding: 0
 
@@ -54,96 +56,78 @@ textarea
   resize: vertical
 
 .chromeframe
-  margin: 0.2em 0
   background: #ccc
   color: #000
+  margin: 0.2em 0
   padding: 0.2em 0
 
-body
-  font: 1.2em/1.95em Merriweather, serif
-  background: main_bg
-
 .wrapper
-  width: 90%
   margin: 0 5%
-
-
-// Colors & Fonts
+  width: 90%
 
 .header-container
-  font-family: Vollkorn, serif
   background: header_bg
+  font-family: Vollkorn, serif
+  font-weight: normal
+
+  .wrapper
+    margin-top: 1em
 
   h1
-    font-weight: normal
+    margin: 0
 
-  nav ul li a
-    font-weight: normal
+  a
     padding: 12px 0
 
 .main-container
   .wrapper
     border-top: solid 1px #eee
 
-.main-container h1
-    font-size: 2.2em
+  h1
+    font-size: 1.4em
 
 .footer-container,
 .main aside
-  font-family: Lato, sans-serif
-  font-weight: bold
-  font-size: 0.7em
-  line-height: 2em
   background: footer_bg
-  border-top: 5px solid footer_border;
+  border-top: 5px solid footer_border
+  font-family: Lato, sans-serif
+  font-size: 0.7em
+  font-weight: bold
+  line-height: 2em
 
 .title
   color: header_text
+  margin-bottom: 0
 
 // Menu
 
-.title
-  margin-bottom: 0
+nav
+  ul
+    margin: 0
+    padding: 0
 
-nav ul
-  margin: 0
-  padding: 0
+  li
+    margin-top 0.32em
 
-nav li:first-child a
-  margin-left: 0
-
-nav li:last-child a
-  margin-right: 0
-
-nav a
-  float: left
-  display: block
-  margin: 0 1.7%
-  padding: 15px 0
-  text-align: left
-  text-decoration: none
-  font-weight: bold
-  color: header_text
-  background: none
-
-nav a:hover,
-nav a:visited
-  // color: white
-
-nav a:hover
-  text-decoration: none
+  a
+    float: left
+    margin: 0 1.7%
+    padding: 15px 0
+    text-align: left
 
 // Main
 
 .main
+  line-height: 1.6em
   padding: 30px 0
 
-// .main article h1
-//   font-size: 2em
+  aside
+    color: header_text
+    padding: 0px 5% 10px
 
-.main aside
-  color: header_text
-  padding: 0px 5% 10px
+li a
+  color: main_text
+  text-decoration: none
 
 // Footer
 
@@ -167,22 +151,25 @@ nav ul li
 
   // Menu
 
-  .title, nav ul li
+  .title,
+  ul li
     float: left
 
   nav
     float: right
 
-  nav ul li
-    margin: 1em 0 0 2em
+    li
+      margin-left: 2em
+    a
+      margin: 0
 
 @media only screen and (min-width: 750px)
 
   // Main
 
   .wrapper
-    width: 700px
     margin: 0 auto
+    width: 700px
 
 
 // Helper classes
@@ -290,4 +277,3 @@ nav ul li
   h2,
   h3
     page-break-after: avoid
-
