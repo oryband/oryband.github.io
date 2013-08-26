@@ -2,17 +2,17 @@
 layout: base
 ---
 
-<section id="content">
+<section id="about">
   <header><h1>Hi.</h1></header>
-  <p>I'm a Math & CS BSc student at Ben-Gurion University, Israel. I'm a web-developer in profession. I also play guitar, piano, and sometimes mess around with a harmonica and recorder as well.</p>
+  <p>I'm a Math &amp; CS BSc student at Ben-Gurion University, Israel. I'm a web-developer in profession. I also play guitar, piano, and sometimes mess around with a harmonica and recorder as well.</p>
 </section>
 <section id="posts">
   <header><h1>Posts</h1></header>
   <ul>
     {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <!-- <p>{{ post.excerpt }}</p> -->
+      <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date_to_string }}</time>
+      <div><a href="{{ post.url }}">{{ post.title }}</a></div>
     </li>
     {% endfor %}
   </ul>
