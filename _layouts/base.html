@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="/css/normalize.min.css">
   <link rel="stylesheet" href="/css/main.css">
 
+  <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+  {% assign reses = "144|120|114|72|57" | split: "|" %} {% comment %} TODO Add 120 image {% endcomment %}
+  {% for res in reses %}
+    <link rel="apple-touch-icon" sizes="{{ res }}" href="/img/apple-touch-icon-{{ res }}x{{ res }}-precomposed.png">
+  {% endfor %}
+
   <!--[if lt IE 9]>
   <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
   <![endif]-->
