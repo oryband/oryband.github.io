@@ -2,3 +2,7 @@ safe: true
 lsi: false
 pygments: true
 permalink: /:title
+
+name: Ory Band
+description: My personal blog.
+url: http://oryband.com
