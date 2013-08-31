@@ -1,8 +1,12 @@
+# Github overrides
 safe: true
 lsi: false
 pygments: true
-permalink: /:title
 
+permalink: /:title
+# markdown: kramdown
+
+# RSS
 name: Ory Band
 description: My personal blog.
 url: http://oryband.com

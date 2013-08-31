@@ -19,6 +19,8 @@ code{font-family:Monaco,DejaVu Sans Mono,Courier New,monospace}
 .main-container .wrapper{border-top:solid 1px #eee}
 .main-container h1{font-size:1.4em;line-height:1.86em;}
 .main-container h1:first-of-type{margin-top:0}
+.main-container h2{font-size:1.2em}
+.main-container h3{font-size:1em}
 .main-container a{color:#a9a9a9;text-decoration:none;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;transition:color .2s ease-out;}
 .main-container a:hover{color:#a8f26a}
 .main-container #blog a{color:inherit;}
