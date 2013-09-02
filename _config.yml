@@ -3,8 +3,8 @@ safe: true
 lsi: false
 pygments: true
 
+markdown: maruku
 permalink: /:title
-# markdown: kramdown
 
 # RSS
 name: Ory Band
