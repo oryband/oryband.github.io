@@ -25,14 +25,14 @@ code{font-family:Monaco,DejaVu Sans Mono,Courier New,monospace}
 .main-container a:hover{color:#a8f26a}
 .main-container #blog a{color:inherit;}
 .main-container #blog a:hover{color:#a8f26a}
-.footer-container,.main aside{background:#313133;border-top:5px solid #a8f26a;font-family:Lato,sans-serif;font-size:.7em;font-weight:bold;line-height:2em;}
+.footer-container,.main aside{border-top:1px solid #eee;font-size:.6em;line-height:2em;}
 .footer-container a,.main aside a{color:inherit;text-decoration:none;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;transition:color .2s ease-out;}
 .footer-container a:hover,.main aside a:hover{color:#a8f26a}
 .title{color:#222;margin-bottom:0}
 nav ul{margin:0;padding:0}
 nav li{margin-top:.32em}
 nav a{float:left;margin:0 1.7%;padding:15px 0;text-align:left}
-.main{line-height:1.6em;padding:30px 0;}
+.main{line-height:1.6em;padding:30px 0 100px 0;}
 .main aside{color:#222;padding:0 5% 10px}
 ul{list-style:none;padding-left:0}
 li{margin-bottom:10px;}
@@ -40,7 +40,7 @@ li:last-child{margin-bottom:0}
 li a{color:#222;text-decoration:none}
 time{color:#a9a9a9;float:left;font-size:.8em;margin-right:1em;width:6.5em}
 #blog div{margin-left:6.5em}
-.footer-container footer{color:#ccc;padding:20px 0}
+.footer-container footer{color:#222;padding:20px 0}
 nav ul li{display:inline}
 .oldie nav a{margin:0 .7%}
 .ie7 .title{padding-top:20px}
