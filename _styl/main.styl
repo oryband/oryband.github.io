@@ -1,15 +1,9 @@
 // Color variables
 
-main_background = white
-header_background = main_background
-footer_background = #313133
-
 main_color = #222
-header_color = main_color
-footer_color = main_color
+main_background = white
 
 header_border_color = #eee
-footer_border_color = header_border_color
 
 a_color = darkgrey
 time_color = a_color
@@ -47,17 +41,14 @@ body
   background-image: url("/img/bg.png")
   font: 1.2em/1.4 Merriweather, serif
 
-::-moz-selection
-  background: selection_color
-  text-shadow: none
-
+::-moz-selection,
 ::selection
   background: selection_color
   text-shadow: none
 
 hr
   border: 0
-  border-top: 1px solid selection_color
+  border-top: 1px solid header_border_color
   display: block
   height: 1px
   margin: 1em 0
@@ -150,7 +141,7 @@ code
 
 .footer-container,
 .main aside
-  border-top: 1px solid footer_border_color
+  border-top: 1px solid header_border_color
   font-size: 0.6em
   line-height: 2em
   a
@@ -162,7 +153,6 @@ code
       color: selection_color
 
 .title
-  color: header_color
   margin-bottom: 0
 
 // Menu
@@ -188,7 +178,6 @@ nav
   padding: 30px 0 100px 0
 
   aside
-    color: header_color
     padding: 0px 5% 10px
 
 ul
@@ -202,7 +191,6 @@ li
     margin-bottom: 0
 
 li a
-  color: main_color
   text-decoration: none
 
 time
@@ -218,7 +206,6 @@ time
 // Footer
 
 .footer-container footer
-  color: footer_color
   padding: 20px 0
 
 // IE Fixes
@@ -252,7 +239,7 @@ nav ul li
   #avatar
     display: block
     float: right
-    margin-left: 10px
+    margin: 0 0 10px 10px
 
 @media only screen and (min-width: 750px)
 
