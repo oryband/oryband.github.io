@@ -16,8 +16,8 @@ There's an [external command][2] called `brew leaves` which prints all packages 
 If you do a *logical and* on the output of `brew leaves` and `brew deps <package>`, you might just get a list of the orphaned dependency packages, which you can uninstall manually afterwards. Combine this with `join` and you'll get what you need. This example does just that, for a single package you wish to *clean after*:
 
 {% highlight bash %}
-brew rm FORMULA
-brew rm $(join <(brew leaves) <(brew deps FORMULA))
+$ brew rm FORMULA
+$ brew rm $(join <(brew leaves) <(brew deps FORMULA))
 {% endhighlight %}
 
 And that pretty much solves the problem. My OCD can keep calm now.
