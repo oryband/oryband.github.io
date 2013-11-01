@@ -19,16 +19,15 @@ Here's the step-by-step tutorial you've been waiting for:
 [jshint.com][jshint] is a community-driven fork of [jslint][jslint], developed by Javascript Guru/Mahatma Douglas Crockford. It is frequently updated and works great.
 
  1. Install *node.js* using your favorite package manager.
- 2. Install *Node Package Manager*: 'curl https://npmjs.org/install.sh | sh'
-    - See [http://npmjs.org][npm] for more info.
- 3. Install *jshint* globally: 'npm install jshint -g'
- 4. Put your jshint *config* file in your *$HOME* dir: '~/.jshintrc'. [Here's JSHint-Node's example configuration file][jshint-config], they pulled from mine and added more stuff. [Here's my original copy][my-config], which you can also start from.
+ 2. Install [*NPM* (Node Package Manager)][npm].
+ 3. Install `jshint` *globally*: `npm install jshint -g`
+ 4. Put your jshint *config* file in your *$HOME* dir: `~/.jshintrc`. [Here's JSHint-Node's example configuration file][jshint-config], they pulled from mine and added more stuff. [Here's my original copy][my-config], which you can also start from.
 
 ### JSLint
 
 JSLint is a pretty famous project across javascript developers. JSHint was forked from this project (I think).
 
- 1. The steps are the same, except you need to insteall the `jsl` package instead of `jshint`.
+1. The steps are the same, except you need to insteall the `jsl` package instead of `jshint`.
 
 *For more info check this question on [StackOverflow][stack-syntax] for the discussion regarding the above solutions.*
 
@@ -40,17 +39,17 @@ This is a more complicated matter.
 
 There was a project by Mozilla called *DoctorJS*, formerly called *jsctags*, which is [now abandoned][dead]. However, it's still in working shape, and you can [check the repo's issues page][issues] for some bandaging. Here's how to install it:
 
-  1. Install the `exuberant-ctags` package, via your OS package manager (brew, apt-get, etc.). Just make sure you install *exuberant-ctags*.
-  2. Install node.js.
-  3. Clone `DoctorJS` from github: git clone https://github.com/mozilla/doctorjs.git
-  4. Go inside `DoctorJS` dir and `make install` (You'll also need to use `make` to install). There might be problems with installing the program, as it looks like `make install` doesn't do the trick for the moment. For now I just add the repo's `bin/` dir to my $PATH instead. See [DoctorJS's GitHub and issues pages][issues] for more info.
-  5. Install the [TagBar Vim plugin][tagbar] (It's TagBar, not the old infamous TagList!).
+1. Install the `exuberant-ctags` package, via your OS package manager (brew, apt-get, etc.). Just make sure you install *exuberant-ctags*.
+2. Install node.js.
+3. Clone `DoctorJS` from github: git clone https://github.com/mozilla/doctorjs.git
+4. Go inside `DoctorJS` dir and `make install` (You'll also need to use `make` to install). There might be problems with installing the program, as it looks like `make install` doesn't do the trick for the moment. For now I just add the repo's `bin/` dir to my $PATH instead. See [DoctorJS's GitHub and issues pages][issues] for more info.
+5. Install the [TagBar Vim plugin][tagbar] (It's TagBar, not the old infamous TagList!).
 
 ### Tern.js
 
-There's a new promising project called [tern.js][tern]. It's currently in beta, and should eventually replace it. The developer is working on [integrating it with ctags, thus with tagbar and vim][tern-vim]. Stay tuned using the attached links.
+There's a new promising project called [Tern][tern]. It's currently in beta, and should eventually replace it. The developer is working on [integrating it with ctags, thus with tagbar and vim][tern-vim]. Stay tuned using the attached links.
 
-#### jsctags for Tern.js
+#### jsctags for Tern
 
 At last somebody set up a [Tern-to-ctags converter][tern-jsctags] for public use.
 
