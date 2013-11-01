@@ -48,9 +48,13 @@ There was a project by Mozilla called *DoctorJS*, formerly called *jsctags*, whi
 
 ### Tern.js
 
-There's a new promising project called [tern.js][tern]. It's currently in early beta, and should eventually replace it. The developer is working on [integrating it with ctags, thus with tagbar and vim][tern-vim]. Stay tuned using the attached links.
+There's a new promising project called [tern.js][tern]. It's currently in beta, and should eventually replace it. The developer is working on [integrating it with ctags, thus with tagbar and vim][tern-vim]. Stay tuned using the attached links.
 
-The next and final step is probably called PROFIT. Enjoy!
+## jsctags for Tern.js
+
+At last somebody set up a [Tern-to-ctags converter][tern-jsctags] for public use.
+
+The next and final step is called PROFIT. Enjoy!
 
 
   [syntastic]: http://www.vim.org/scripts/script.php?script_id=2736
@@ -69,3 +73,4 @@ The next and final step is probably called PROFIT. Enjoy!
   [stack-source]: http://stackoverflow.com/questions/4777366/recommended-vim-plugins-for-javascript-coding/5893600#5893600
   [tern]: http://ternjs.net/
   [tern-vim]: https://github.com/marijnh/tern_for_vim
+  [tern-jsctags]: https://github.com/ramitos/jsctags
