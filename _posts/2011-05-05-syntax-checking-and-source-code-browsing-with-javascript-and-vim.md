@@ -50,7 +50,7 @@ There was a project by Mozilla called *DoctorJS*, formerly called *jsctags*, whi
 
 There's a new promising project called [tern.js][tern]. It's currently in beta, and should eventually replace it. The developer is working on [integrating it with ctags, thus with tagbar and vim][tern-vim]. Stay tuned using the attached links.
 
-## jsctags for Tern.js
+#### jsctags for Tern.js
 
 At last somebody set up a [Tern-to-ctags converter][tern-jsctags] for public use.
 
