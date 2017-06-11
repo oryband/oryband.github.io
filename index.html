@@ -1,22 +1,83 @@
----
-layout: base
----
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<section id="about">
-  <img src="/img/avatar.jpg" alt="Photo of Ory Band" width="204" height="278" id="avatar">
-  <header><h1>Hello, I'm Ory.</h1></header>
-  <p>I'm a Math &amp; CS BSc student at Ben-Gurion University, Israel, and a web-developer in profession.</p>
-  <p>I play guitar, piano, and sometimes mess around with a harmonica and recorder as well.</p>
-  <p>I also took a long trip to China and Mongolia, and wrote an <a href="http://oryband.wordpress.com">unfinished travel blog</a> in Hebrew that you're welcome to read.</p>
-</section>
-<section id="blog">
-  <header><h1>Blog</h1></header>
-  <ul>
-    {% for post in site.posts %}
-    <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date_to_string }}</time>
-      <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Ory Band</title>
+  <meta name="description" content="Ory Band">
+  <meta name="author" content="Ory Band">
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,900,900italic,400italic|Vollkorn' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" sizes="57" href="/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon" sizes="72" href="/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" sizes="114" href="/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon" sizes="120" href="/apple-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon" sizes="144" href="/apple-touch-icon-144x144-precomposed.png">
+
+  <!--[if lt IE 9]>
+  <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="header-container">
+    <header class="wrapper clearfix">
+      <h1 class="title"><a href="/">Ory Band</a></h1>
+      <nav>
+        <ul>
+          <li><a href="https://medium.com/@oryband">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="main-container">
+    <article class="main wrapper clearfix">
+      <section id="content">
+        <section id="about">
+          <img src="/img/avatar.jpg" alt="Photo of Ory Band" width="204" height="278" id="avatar">
+          <header>
+            <h1>Hello, I'm Ory.</h1>
+          </header>
+          <p>I'm a Senior Backend Engineer at <a href="http://www.kik.com/">Kik</a>. I mostly code in Golang and Python, deal a lot with CI-CD, and backend monitoring. I also do some Front End development.</p>
+          <p>Please visit my <a href="https://medium.com/@oryband">blog</a> for technical posts and other points of interest.</p>
+          <p>I Volunteer at the <a href="http://www.hasadna.org.il/en/">Public Knowledge Workshop</a>, an Israeli Open Data organization promoting government transparency and empowering citizens using technology.</p>
+          <p>I currently live in Tel Aviv. I play Guitar and Piano, and sometimes mess around with a harmonica and recorder as well.</p>
+        </section>
+      </section>
+    </article>
+  </div>
+
+  <div class="footer-container">
+    <footer class="wrapper">
+      <div>
+        Designed &amp; developed by <a href="http://ory.band">Ory Band</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+        <br /> Follow me:&nbsp;
+        <a href="http://github.com/oryband">GitHub</a> |
+        <a href="http://stackoverflow.com/users/207894/ory-band">StackOverflow</a> |
+        <a href="http://il.linkedin.com/in/oryband">LinkedIn</a> |
+        <a href="http://google.com/+OryBand">Google+</a> |
+        <a href="http://twitter.com/OryBand">Twitter</a> |
+        <a href="http://facebook.com/oryband">Facebook</a> |
+        <a href="http://instagram.com/oryband">Instagram</a> |
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
