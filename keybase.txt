@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/oryband
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ory.band
+  * I am oryband (https://keybase.io/oryband) on keybase.
+  * I have a public key ASBfqZjkHp__OrrGzchSN2uawxCbUaLB5dP8Y8yrirz_6Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205fa998e41e9fff3abac6cdc852376b9ac3109b51a2c1e5d3fc63ccab8abcffe80a",
+      "host": "keybase.io",
+      "kid": "01205fa998e41e9fff3abac6cdc852376b9ac3109b51a2c1e5d3fc63ccab8abcffe80a",
+      "uid": "dafd0fa07b7ae1c726b94fb445404219",
+      "username": "oryband"
+    },
+    "merkle_root": {
+      "ctime": 1558952239,
+      "hash": "046bbb7e52254978b21423be9a40700895d85cbb75b2ebfa3399f67b681c1dc3e6edaf7681f6f359efe740c468f2ff0d054710b990c2c01d771af9e54aaeb605",
+      "hash_meta": "f01fd37d7b257e03e1cbe8e2efa44da2af1f101fe7adf1305234e62cdf5872e6",
+      "seqno": 5454815
+    },
+    "service": {
+      "entropy": "Gtxw1XVn8iiXgEslkb64Vch0",
+      "hostname": "ory.band",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.0.0"
+  },
+  "ctime": 1558952274,
+  "expire_in": 504576000,
+  "prev": "260335580d22758f12d81238cb633613300b3592256aea569ba48244df4bc8b6",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgX6mY5B6f/zq6xs3IUjdrmsMQm1GiweXT/GPMq4q8/+gKp3BheWxvYWTESpcCDsQgJgM1WA0idY8S2BI4y2M2EzALNZIlaupWm6SCRN9LyLbEIHA58sHWB4frUqLV59fG6QqChTQDEd0FXcSJ8hxNnFK1AgHCo3NpZ8RAlT+4cc8zYjle1TXKJqftX6EV91J0X1L/WmWK1o9lWfc6IeT1KO5Yx0b+yJDvAivAAyeJ7gVHpuMOxhTf2sC8DahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP/I0cBppsrehOhZB0kbNhrOfQfc9S38OlmrDhA617QTo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/oryband
+
+==================================================================
