@@ -4,9 +4,9 @@
 # TEAM
 
     Author: Ory Band
-    Site: http://ory.band.
+    Site: https://ory.band.
     Twitter: @oryband
-    GitHub: http://github.com/oryband
+    GitHub: https://github.com/oryband
     Location: Israel
 
 # THANKS

@@ -4,7 +4,7 @@ https://keybase.io/oryband
 
 I hereby claim:
 
-  * I am an admin of http://ory.band
+  * I am an admin of https://ory.band
   * I am oryband (https://keybase.io/oryband) on keybase.
   * I have a public key ASBfqZjkHp__OrrGzchSN2uawxCbUaLB5dP8Y8yrirz_6Ao
 
