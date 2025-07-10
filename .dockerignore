@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+
+# IDE and Editor files
+.cursor
+*.code-workspace
+.vscode/
+
+# Jekyll build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.asset-cache
+.jekyll-assets-cache
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Documentation (keep only essential docs)
+README.md
+LICENSE*

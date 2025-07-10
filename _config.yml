@@ -28,7 +28,7 @@ author:
   bio: " "
   location: "Israel"
   employer: # Company name
-  uri: "ory.band"
+  uri:
   email: # Add your email if you want
 
   # Academic websites
@@ -56,14 +56,14 @@ author:
   facebook: # Username
   flickr: # Username
   foursquare: # Username
-  goodreads: "22970280-ory"
+  goodreads: "user/show/22970280-ory"
   google_plus: # Username
   keybase: "oryband"
   instagram: # Username
   lastfm: # Username
   linkedin: "OryBand"
   mastodon: # URL
-  medium: "@oryband"
+  medium: "medium.com/@oryband"
   pinterest: # Username
   soundcloud: # Username
   steam: # Username

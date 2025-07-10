@@ -40,5 +40,24 @@ I implemented a [proof of concept for a web-based MapReduce](https://github.com/
 ### [Collecting User Data and Usage](https://medium.com/@oryband/collecting-user-data-and-usage-ffa84c4dba34)
 Knowing what our users are doing with our app is important — What they like, what they don't, quality of our video calls, etc. Gathering and storing this information however, is quite a task — especially when we have more than one million events reported every minute. At Rounds, we are using two data stores for live monitoring, search, and BI. One is indeed for immediate, live data, and the other for long-term data warehousing and long-term research.
 
-### [Twitter Thoughts and Discussions](https://twitter.com/oryband)
-I regularly share thoughts on software engineering, distributed systems, and technology trends on Twitter. Follow me for insights on backend engineering, system design, and industry observations.
+### Twitter Thoughts and Discussions
+
+**[Database Architecture & DynamoDB](https://x.com/oryband/status/1175003442508685313)**  
+*September 2019*  
+A deep dive into Amazon's groundbreaking DynamoDB paper from 2007, exploring how Amazon solved massive scale challenges by building their own database. Key insights include prioritizing eventual consistency over immediate consistency, and choosing liveness (keeping the app running) over safety (preventing data divergence) - foundational decisions that shaped modern NoSQL databases.
+
+**[Engineering Literature: "Designing Data-Intensive Applications"](https://x.com/oryband/status/1535777268299141120)**  
+*June 2022*  
+After 3 years and 550 pages, confirmed this book truly deserves its reputation as the "backend engineering bible." Highly recommends the audiobook format for maintaining reading pace through complex distributed systems concepts.
+
+**[Database Selection Strategy](https://x.com/oryband/status/1447888264569008129)**  
+*October 2021*  
+Shared practical guidance on choosing the right database for specific problems, with focus on distributed database considerations and decision frameworks for system architects.
+
+**[Performance Estimation Resources](https://x.com/oryband/status/1397910350197006340)**  
+*May 2021*  
+Highlighted essential napkin-math techniques for estimating system performance, including computation times, compression rates, serialization costs, and geographical latencies - crucial for back-of-envelope calculations in system design.
+
+**[Leadership in Engineering Teams](https://x.com/oryband/status/1212397548155092992)**  
+*January 2020*  
+Discussed applying Simon Sinek's leadership principles in engineering contexts, emphasizing the importance of collaboration, mentoring, and understanding the "infinite game" mindset in both people management and code development.
