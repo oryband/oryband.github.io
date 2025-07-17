@@ -23,6 +23,9 @@ Implemented an event streaming and ETL pipeline. System was highly available, re
 ### Production Monitoring Infrastructure
 Developed a distributed production monitoring infrastructure, spanning multiple cloud providers.
 
+### Real-Time Webcam Face Capture
+Implemented a prototype that turns any webcam into a real-time avatar-animation engine: A lightweight video-diffusion layer denoises batches of frames together for long-range coherence, streaming at ~18 fps with under-2s latency on a single RTX 4090 - no markers or extra gear required.Useful for lifelike games, VR, streaming, and video calls.
+
 ### Federated Blockchains
 I [gave a talk](https://youtu.be/QSpG6a9bmu0) about Federated consensus networks, focusing on Stellar and Ripple, and discussed how they differ from other popular decentralized consensus solutions such as Proof-of-Work and Proof-of-Stake.
 
