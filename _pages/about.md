@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Backend engineer and hands-on Tech Lead, specializing in data-intensive processing, distributed systems, and cloud infrastructure.
+I'm a Backend engineer and hands-on Lead, specializing in data-intensive processing, distributed systems, and cloud infrastructure.
 
 I love designing and implementing intricate systems, and take to heart deploying and maintaining them once they reach production.
 
