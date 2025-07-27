@@ -7,13 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Backend engineer and hands-on Lead, specializing in data-intensive processing, distributed systems, and cloud infrastructure.
-
-I love designing and implementing intricate systems, and take to heart deploying and maintaining them once they reach production.
-
-I'm good with making sense of things: Understanding how applications behave, perform, exposing and analyzing key metrics, as well as deep dive into difficult to crack problems.
-
-I'm a team player, and I get the job done.
+Hands-on backend architect specializing in data‑intensive, distributed systems and cloud infrastructure. I’ve built and operated backends at 1B+ requests/day, owning design → production → observability. Lately I’ve shipped GenAI/agentic backends and natural‑language tooling for ops. I turn chaotic, high-load systems into boringly reliable platforms - and upskill the people around me while doing it.
 
 ## Things I Built
 
