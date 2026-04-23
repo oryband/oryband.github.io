@@ -1,10 +1,14 @@
-version: '3.8'
-
 services:
   jekyll:
     build: .
     ports:
       - "4000:4000"
+      - "35729:35729"
     environment:
-      - JEKYLL_ENV=development
-    command: jekyll serve --host 0.0.0.0 --force_polling
+      - JEKYLL_ENV=production
+    volumes:
+      - .:/srv/jekyll
+      - bundle_cache:/usr/local/bundle
+
+volumes:
+  bundle_cache:

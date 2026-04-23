@@ -1,0 +1,30 @@
+<script>localStorage.setItem('theme','light');</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.author__urls-wrapper > button');
+    if (btn) btn.textContent = 'Links';
+
+    const avatar = document.querySelector('.author__avatar > img');
+    if (avatar && avatar.parentElement.tagName !== 'A') {
+      const a = document.createElement('a');
+      a.href = '/images/profile-high.jpg';
+      a.target = '_blank';
+      a.rel = 'noopener';
+      avatar.parentNode.insertBefore(a, avatar);
+      a.appendChild(avatar);
+    }
+  });
+</script>
+<style>
+  #theme-toggle { display: none !important; }
+  .author__avatar img { cursor: pointer; }
+  .greedy-nav:has(.hidden-links:empty) button { display: none !important; }
+  @media (max-width: 924px) {
+    .sidebar > div { display: table; width: 100%; }
+    .author__content { width: 100%; }
+    .author__avatar img { display: block; width: 36px; height: auto; }
+    .author__urls-wrapper > button { color: var(--global-text-color) !important; }
+    .author__urls { text-align: left; }
+    .author__urls:before, .author__urls:after { left: auto; right: 1em; }
+  }
+</style>

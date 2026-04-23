@@ -1,17 +1,19 @@
-FROM jekyll/jekyll:4
+FROM ruby:3.3-slim
 
-# Set working directory
+RUN apt-get update -qq \
+    && apt-get install -y --no-install-recommends \
+        build-essential \
+        git \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /srv/jekyll
 
-# Copy Gemfile and install dependencies
-COPY Gemfile* ./
+COPY Gemfile ./
 RUN bundle install
 
-# Copy the rest of the site
 COPY . .
 
-# Expose port 4000
-EXPOSE 4000
+EXPOSE 4000 35729
 
-# Default command with live reload
-CMD ["jekyll", "serve", "--host", "0.0.0.0", "--livereload"] 
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload", "--force_polling", "--config", "_config.yml,_config.dev.yml"]
