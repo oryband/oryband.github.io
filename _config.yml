@@ -11,10 +11,10 @@ remote_theme: academicpages/academicpages.github.io
 
 # Basic Site Settings
 locale: "en-US"
-title: "Ory Band - Backend Engineer & Tech Lead"
+title: "Ory Band - Tech Lead, Distributed Systems & AI Platforms"
 title_separator: "-"
 name: &name "Ory Band"
-description: &description "Backend engineer and hands-on Tech Lead, specializing in data-intensive processing, distributed systems, and cloud infrastructure."
+description: &description "Hands-on architect and tech lead at the intersection of large-scale distributed systems and production AI/agentic platforms. Backends at 1B+ requests/day and the retrieval layer inside flagship LLM agents."
 url: https://ory.band # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "oryband/oryband.github.io"
